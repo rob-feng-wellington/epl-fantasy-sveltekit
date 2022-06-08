@@ -2,6 +2,7 @@
 	"name": "epl-fantasy-sveltekit",
 	"version": "0.0.1",
 	"scripts": {
+		"predev": "prisma migrate dev",
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
@@ -18,11 +19,15 @@
 		"carbon-pictograms-svelte": "^12.0.3",
 		"carbon-preprocess-svelte": "^0.9.0",
 		"d3": "^7.4.4",
+		"prisma": "^3.15.0",
 		"svelte": "^3.48.0",
 		"svelte-check": "^2.2.6",
 		"svelte-preprocess": "^4.10.1",
 		"tslib": "^2.3.1",
 		"typescript": "~4.6.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@prisma/client": "^3.14.0"
+	}
 }
